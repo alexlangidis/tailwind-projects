@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./app/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      listStyleImage: {
+        checkmark: 'url("../app/images/icon-list.svg")',
+      },
+    }
   },
   plugins: [],
 }

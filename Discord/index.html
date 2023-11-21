@@ -20,6 +20,7 @@
     <script src="./src/script.js" defer></script>
   </head>
   <body class="w-full h-full">
+    <!--Header - Menu-->
     <header class="bg-[#404eed] w-full z-50 pt-4">
       <div
         class="py-4 px-8 flex justify-between items-center xl:max-w-[1440px] m-auto z-50"
@@ -46,7 +47,7 @@
           <button class="px-4 py-2 text-black bg-white rounded-full md:flex">
             Login
           </button>
-          <button class="btn-mobile-menu lg:hidden asadad">
+          <button class="btn-mobile-menu lg:hidden">
             <i class="fa-solid fa-bars text-white text-[2rem] relative"></i>
           </button>
         </div>
@@ -54,13 +55,13 @@
 
         <!-- Mobile Menu-->
         <div
-          class="absolute top-0 right-0 z-40 hidden w-full max-w-full min-h-screen grid-cols-4 asd lg:hidden"
+          class="absolute top-0 right-0 z-40 hidden w-full max-w-full min-h-screen grid-cols-4 lg:hidden mobile__menu__container"
         >
           <div
             class="hidden bg-black opacity-40 sm:col-start-1 sm:col-end-3 sm:block"
           ></div>
           <div
-            class="relative hidden col-start-1 col-end-5 bg-white sm:col-start-3 sm:col-end-5 asd1"
+            class="relative hidden col-start-1 col-end-5 bg-white sm:col-start-3 sm:col-end-5 mobile__menu__container__right__column"
           >
             <div
               class="absolute flex items-center justify-between w-full mobile__opened top-6 right-8"
@@ -100,9 +101,11 @@
         <!-- End of Mobile Menu-->
       </div>
     </header>
+    <!--End of Header - Menu-->
 
+    <!--Hero Section-->
     <div
-      class="div bg-[#404eed] min-h-[800px] w-full relative md:min-h-[740px] xl:min-h-[650px] 2xl:min-h-[680px] overflow-hidden"
+      class="div bg-[#404eed] min-h-[756px] w-full relative md:min-h-[756px] xl:min-h-[650px] 2xl:min-h-[680px] overflow-hidden"
     >
       <div
         class="hero p-8 py-20 text-white text-start relative z-30 flex flex-col justify-center items-start m-auto xl:items-center xl:text-center xl:max-w-[1440px]"
@@ -134,6 +137,7 @@
           </button>
         </div>
       </div>
+
       <div class="absolute top-0 left-0 w-full h-full hero-bg-img">
         <img
           src="./src/images/bg-hero.svg"
@@ -152,7 +156,9 @@
         />
       </div>
     </div>
+    <!--End of Hero Section-->
 
+    <!--Features Sections-->
     <div
       class="flex flex-col items-center justify-center w-full px-6 py-20 m-auto feature__one md:flex-row xl:gap-20"
     >
@@ -234,6 +240,9 @@
       </div>
     </div>
 
+    <!--End of Features Sections-->
+
+    <!--Call To Action Sections-->
     <div
       class="call__to__action w-full flex flex-col justify-center items-center m-auto py-20 px-6 xl:gap-8 bg-[#f6f6f6]"
     >
@@ -272,19 +281,22 @@
         </button>
       </div>
     </div>
+    <!--End of Call To Action Sections-->
 
+    <!--Footer Sections-->
     <footer class="bg-[#23272a] py-20 px-10">
       <div
         class="grid grid-cols-4 grid-rows-2 footer__container max-w-[1440px] m-auto md:grid-cols-12 md:grid-rows-1 pb-8"
       >
+        <!--Column 1-->
         <div class="col-start-1 col-end-4 row-end-2 column1">
           <div class="flex flex-col items-start justify-center">
             <select
               name=""
               id=""
-              class="text-[1.2rem] border-none bg-transparent text-white"
+              class="text-[1.2rem] border-white p-2 bg-transparent text-white"
             >
-              <option value="" class="">English,USA</option>
+              <option value="English">English,USA</option>
             </select>
 
             <div
@@ -298,6 +310,8 @@
             </div>
           </div>
         </div>
+
+        <!--Column 2-->
         <div
           class="col-start-1 col-end-2 row-start-2 row-end-3 column2 md:col-start-6 md:col-end-9 md:row-start-1 xl:col-start-5 xl:col-end-7"
         >
@@ -313,6 +327,8 @@
             <a href="#">App Directory</a>
           </div>
         </div>
+
+        <!--Column 3-->
         <div
           class="col-start-3 col-end-5 row-start-2 row-end-3 column3 md:col-start-9 md:col-end-12 md:row-start-1 xl:col-start-7 xl:col-end-9"
         >
@@ -329,6 +345,8 @@
             <a href="#">Fall Release</a>
           </div>
         </div>
+
+        <!--Column 4-->
         <div
           class="col-start-1 col-end-3 row-start-3 row-end-4 column4 md:col-start-6 md:col-end-9 md:row-start-3 xl:col-start-9 xl:col-end-11 xl:row-start-1"
         >
@@ -350,6 +368,8 @@
             <a href="#">Official 3rd Party Merch</a>
           </div>
         </div>
+
+        <!--Column 5-->
         <div
           class="col-start-3 col-end-5 row-start-3 row-end-4 column5 md:col-start-9 md:col-end-12 md:row-start-3 xl:col-start-11 xl:col-end-13 xl:row-start-1"
         >
@@ -384,5 +404,7 @@
         </button>
       </div>
     </footer>
+
+    <!--End of Footer Sections-->
   </body>
 </html>

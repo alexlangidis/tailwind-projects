@@ -1,11 +1,9 @@
 $(document).ready(function () {
     $('.btn-mobile-menu, .menu-close').click(function (e) { 
         e.preventDefault();
-        $('.asadad').toggleClass('hidden');
-        $('.asd').toggleClass('grid hidden');
-        $('.asd1').toggleClass('hidden');
-
-
+        $('.btn-mobile-menu').toggleClass('hidden');
+        $('.mobile__menu__container').toggleClass('grid hidden');
+        $('.mobile__menu__container__right__column').toggleClass('hidden');
     });
 
 
